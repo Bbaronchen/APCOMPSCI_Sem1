@@ -8,19 +8,19 @@ import java.util.Scanner;
 		Scanner keyboard = new Scanner(System.in);
 		
 		System.out.println("Enter interest rate.");
-		double r = keyboard.nextDouble();
+		double R = keyboard.nextDouble();
 		System.out.println("Enter principal (the original amount you intend to borrow).");
-		double p = keyboard.nextDouble();
+		double P = keyboard.nextDouble();
 		System.out.println("Enter number of times the loan is compounded per year.");
-		double n = keyboard.nextDouble();
+		double N = keyboard.nextDouble();
 		System.out.println("Enter life of the loan (in years).");
-		double t = keyboard.nextDouble();
+		double L = keyboard.nextDouble();
 		
-		double RtoPercent = r / 100;
+		double RtoPercent = R / 100;
 		
-		double CompoundInterest = CompIn.calcCI(RtoPercent, p ,n,t);
+		double CompoundInterest = CompIn.calcCI(RtoPercent, P,N,L);
 		
-		System.out.printf("Your total monthly payment is $ %1.2f", CompoundInterest );
+		System.out.printf("Your total monthly payment will be $ %1.6f", CompoundInterest );
 	}
 	
 	public double calcCI(double one, double two, double three, double four)
