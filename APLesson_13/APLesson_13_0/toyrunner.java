@@ -1,11 +1,12 @@
-public class toyrunner 
+import java.util.Scanner;
+public class toyrunner
 {
-	public static void main (String[]args)
+	public static void main(String[]args)
 	{
-		car object1 = new car ("Benz");
-		afigure object2 = new afigure ("Kilito");
+		car objective1 = new car("BMW");
+		afigure objective2 = new afigure("Superman");
 		
-		System.out.println(object1);
-		System.out.println(object2);
+		System.out.println(objective1);
+		System.out.println(objective2);
 	}
-} 
+}
